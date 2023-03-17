@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Teste</title>
+    <title>Formulario</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <a><b>Sign Up!</b></a>
 </head>
+
+
 <body>
-    
+    <div class="container">
+        <form>
+            <h1 id="Signup">Sign Up!</h1><br>
+
+            <label for="rdTitle">Title</label><br>
+            <input name="rdTitle" id="rdMr" type="radio"><label>Mr</label>
+            <input name="rdTitle" id="rdMrs" type="radio"><label>Mrs</label> 
+            <input name="rdTitle" id="rdMiss" type="radio"><label>Miss</label><br>
+            
+            <label for="txtFname">First name</label><br>
+            <input autofocus required type="text" id="txtFname" name="txtFname"><br>
+            
+            <label for="txtLname">Last name</label><br>
+            <input required type="text" name="txtLname" id="txtLname"><br>
+            
+            <label for="txtEmail">Email</label><br>
+            <input required type="email" name="txtEmail" id="txtEmail"><br>
+            
+            <label for="txtPhone">Phone Number</label><br>
+            <input type="tel" name="txtPhone" id="txtPhone"><br>
+            
+            <label for="txtPassword">Password</label><br>
+            <input required type="password" id="txtPassword" name="txtPassword"><br>
+            
+            <label for="selCountry" id="selCountry">Country</label><br>
+            <select name="selCountry" id="selCountry">
+                <option value="Brazil">Brazil</option>
+                <option value="United States">United States</option>
+                <option value="China">China</option>
+                <option value="Russia">Russia</option>
+            </select><br> 
+               
+            <label for="txtAhobbies" id="txtAhobbies">Hobbies</label><br>
+            <textarea name="txtAhobbies" id="txtAhobbies" cols="35" rows="6"></textarea><br>
+
+            <input required type="checkbox" id="checkTerms" name="checkTerms">
+            <label for="checkTerms">I agree to the <a href="https://www.youtube.com/static?gl=BR&template=terms" target="_blank">terms and conditions</a></label><br>
+
+            <div class="buttons">
+            <button value="butSign">Sign in</button>
+            <button value="butReset" onClick="window.location.reload();">Reset form</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
