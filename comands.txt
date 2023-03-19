@@ -1,0 +1,8 @@
+GIT add - adiciona arquivos a branch.
+
+GIT status - exibe o estado do diretório de trabalho ( branch ), se esta pronta para ser enviada a master ou se foram feitas altereações.
+
+GIT commit - envia as alterações para o bloco de contrução retirando da branch
+
+GIT PUSH - envia para o git hub ( master )
+
